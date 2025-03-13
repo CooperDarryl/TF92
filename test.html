@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Javascript Browser Detection</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <p id="b">
+
+    </p>
+    <script>
+    
+    window.addEventListener("load", function() {
+  // CHROME
+  if (navigator.userAgent.indexOf("Chrome") != -1 ) {
+    console.log("Google Chrome");
+    document.write("Chrome");
+  }
+  // FIREFOX
+  else if (navigator.userAgent.indexOf("Firefox") != -1 ) {
+    console.log("Mozilla Firefox");
+    document.write("Firefox");
+
+  }
+  // INTERNET EXPLORER
+  else if (navigator.userAgent.indexOf("MSIE") != -1 ) {
+    console.log("IE");
+    
+  }
+  // EDGE
+  else if (navigator.userAgent.indexOf("Edge") != -1 ) {
+    console.log("Internet Exploder");
+    document.write("Edge");
+    
+  }
+  // SAFARI
+  else if (navigator.userAgent.indexOf("Safari") != -1 ) {
+    console.log("Safari");
+    document.write("Safari");
+    
+  }
+  // OPERA
+  else if (navigator.userAgent.indexOf("Opera") != -1 ) {
+    console.log("Opera");
+    document.write("Opera");
+    
+  }
+  // YANDEX BROWSER
+  else if (navigator.userAgent.indexOf("YaBrowser") != -1 ) {
+    console.log("YaBrowser");
+    document.write("YaBrowser");
+    
+  }
+  // OTHERS
+  else {
+    console.log("Others");
+    document.write("Unknown");
+  }
+});
+    </script>
+
+  </body>
+</html>
